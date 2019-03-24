@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/linchengGit/config-repo
+          username: linchengGit
+          password:
+          basedir: /Users/lc/git/lc-spring-cloud/config-basedir
+eureka:
+  client:
+    service-url:
+      dufaultZone: http://localhost:8761/eureka
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
